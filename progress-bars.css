@@ -1,0 +1,131 @@
+:root {
+	--gray: #ebebeb;
+	--green: #a9da64;
+	--darker-green: #96d151;
+	--red: #f4796e;
+	--darker-red: #f48473;
+	--white: #fefefe;
+	--blue: #99d3f9;
+	--darker-blue: #89c5eb;
+	--yellow: #f8d169;
+	--darker-yellow: #f6bd49;
+	--darker-border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.main-container {
+	margin: 2rem;
+	width: 100vw;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	margin-bottom: 1rem;
+}
+
+.bar {
+	display: flex;
+	align-items: center;
+	height: 2rem;
+	width: 40%;
+	background-color: var(--gray);
+	border-radius: 15px;
+	color: rgb(59, 58, 58);
+}
+
+.filling {
+	/* padding: 1%; */
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 1%;
+	height: 100%;
+	width: 20%;
+	border-radius: 15px;
+}
+
+.green {
+	background-image: repeating-linear-gradient(
+		-45deg,
+		var(--green),
+		var(--green) 5px,
+		var(--darker-green),
+		var(--darker-green) 10px
+	);
+	border: var(--darker-border);
+}
+
+.red {
+	background-image: repeating-linear-gradient(
+		-45deg,
+		var(--red),
+		var(--red) 5px,
+		var(--darker-red),
+		var(--darker-red) 10px
+	);
+	border: var(--darker-border);
+}
+.white {
+	background-color: var(--white);
+	border: var(--darker-border);
+}
+.blue {
+	background-image: repeating-linear-gradient(
+		-45deg,
+		var(--blue),
+		var(--blue) 5px,
+		var(--darker-blue),
+		var(--darker-blue) 10px
+	);
+	border: var(--darker-border);
+}
+.yellow {
+	background-image: repeating-linear-gradient(
+		-45deg,
+		var(--yellow),
+		var(--yellow) 5px,
+		var(--darker-yellow),
+		var(--darker-yellow) 10px
+	);
+	border: var(--darker-border);
+}
+
+.button {
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: rgba(112, 111, 111, 0.4);
+}
+
+#fill-full,
+#reset {
+	margin: 2rem;
+	border: 2px solid black;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 30px;
+	background-color: rgb(187, 81, 81);
+}
+
+#fill-full:hover,
+#reset:hover,
+.button:hover {
+	cursor: pointer;
+	filter: brightness(0.8);
+	transform: scale(1.2);
+	transition: 0.2s;
+}
+
+#reset {
+	background: rgb(71, 64, 156);
+}
